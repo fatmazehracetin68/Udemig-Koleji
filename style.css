@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background: linear-gradient(rgba(5, 5, 30, 0.5), rgba(5, 5, 30, 0.5)),
+    url(images/kolej.jpg);
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+}
+nav {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a img {
+  width: 150px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.nav-links ul li {
+  margin: 10px;
+  color: white;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+}
+.nav-links ul li a::after {
+  content: "";
+  background-color: red;
+  display: block;
+  width: 0;
+  height: 3px;
+  margin-top: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav-links ul li a:hover::after {
+  width: 100%;
+  transition-duration: 0.3s;
+}
+
+.fa-bars {
+  color: white;
+  font-size: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+  display: none;
+}
+.fa-bars:hover {
+  font-size: 35px;
+  transition-duration: 0.3s;
+}
+.text-box {
+  width: 80%;
+  color: white;
+  text-align: center;
+  margin-top: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.text-box h1 {
+  font-size: 50px;
+}
+.text-box p {
+  margin: 10px;
+  font-size: 15px;
+}
+.hero-btn {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 12px 34px;
+  border: 1px solid #fff;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+}
+.hero-btn:hover {
+  background-color: red;
+  transition-duration: 0.3s;
+}
+.align-container {
+  width: 80%;
+  margin: auto;
+  padding-top: 60px;
+  text-align: center;
+}
+.row {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.align-item {
+  flex-basis: 30%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+}
+section h1 {
+  font-size: 35px;
+}
+section p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  padding: 20px;
+}
+section h3 {
+  margin: 10px 0;
+}
+.course-col {
+  background-color: antiquewhite;
+}
+.course-col:hover {
+  box-shadow: 0 0 10px gray;
+  transition: 0.3s;
+}
+.campus-col {
+  padding: 0;
+  position: relative;
+  border-radius: 10px;
+}
+.campus-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.layer:hover {
+  background-color: rgba(230, 118, 6, 0.5);
+  transition: 0.3s;
+}
+.layer h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  opacity: 0;
+}
+.layer:hover h3 {
+  bottom: 50%;
+  transition: 0.3s;
+  opacity: 1;
+}
+.facilities-col {
+  text-align: left;
+  padding: 0;
+  background-color: antiquewhite;
+}
+.facilities-col h3 {
+  text-align: center;
+}
+.facilities-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+.facilities-col p {
+  margin: 16px 0;
+}
+.testemonial-col {
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  background-color: antiquewhite;
+  padding: 5px;
+}
+.testemonial-col img {
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-right: 30px;
+}
+.testemonial-col p {
+  padding: 0;
+}
+.testemonial-col h2 {
+  margin-top: 15px;
+}
+.testemonial-col .fa-star,
+.testemonial-col .fa-star-half-stroke {
+  color: red;
+}
+.ua {
+  color: white;
+  /* background: linear-gradient(
+    (rgba(8, 5, 30, 0.4)),
+    url(images/photo_6039568890238976229_y.jpg)
+  ); */
+  background-color: rgba(8, 5, 30, 0.4);
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+  border-radius: 10px;
+  margin: 50px auto;
+  text-align: center;
+}
+.ua h1 {
+  margin-bottom: 40px;
+  padding: 0;
+}
+footer {
+  /* padding: 20px 0; */
+}
+footer h1 {
+  margin: 25px 0;
+}
+.icons {
+  margin: 10px;
+}
+.icons .fa-brands {
+  color: red;
+  margin: 0 10px;
+  cursor: pointer;
+  padding: 20px 10px;
+}
+.fa-heart {
+  color: red;
+}
+
+@media (max-width: 675px) {
+  .nav-links {
+    display: none;
+  }
+  .fa-bars {
+    display: block;
+  }
+  .text-box h1 {
+    font-size: 30px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .ua h1 {
+    font-size: 25px;
+  }
+}
